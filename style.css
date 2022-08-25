@@ -30,6 +30,7 @@ img {
 }
 .container{
     width: 330px;
+    min-width: 200px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
