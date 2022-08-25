@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --Vdark-cyan: hsl(179, 100%, 13%);
+    --Twhite-P: hsla(0, 0%, 100%, 0.75);
+    --Vlight-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca';
+    font-size: 0.9375rem;
+    color: var(--Twhite-P);
+}
+p {
+    line-height: 1.5rem;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container{
+    width: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    background-color: var(--bright-orange);
+    padding: 3.2em 3.2em;
+    
+}
+.item2 {
+    background-color: var(--dark-cyan);
+}
+.item2 a {
+    color: var(--dark-cyan);
+}
+.item3 {
+    background-color: var(--Vdark-cyan);
+}
+.item3 a {
+    color: var(--Vdark-cyan);
+}
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 0.85em;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.9em 1.9em;
+    background-color: white;
+    color: var(--bright-orange);
+    border-radius: 2rem;
+    display: inline-block;
+    margin-top: 0.6em;
+    border: 2px solid transparent;
+}
+a:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+        width: 88%;
+        max-width: 920px;
+    }
+    p {
+        line-height: 1.6rem;
+        margin-bottom: 4.2em;
+    }
+}
